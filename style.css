@@ -1,0 +1,55 @@
+body,
+html {
+    background: #090d00;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.75);
+    z-index: 5;
+    
+}
+#changebutton{
+    z-index: 5;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: whitesmoke;
+    cursor: pointer;
+    &:hover{
+        background-color: yellow;
+        color: black;
+        transition: ease-in 300ms;
+    }
+}
+
+/* BACKGROUND */
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#bg canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
